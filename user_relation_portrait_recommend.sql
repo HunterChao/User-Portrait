@@ -10,7 +10,7 @@
 		  from wedw_dw.peasona_user_tag_relation  --用户标签表
 		 where date_id >='2017-01-01'
 		   and date_id <='2017-07-31'
-		   and tag_type_id=12		--医言堂
+		   and tag_type_id=12		
 		   and act_type_id in (14,15,43,44,45)
 	  group by user_id,
 			   org_id,
