@@ -16,7 +16,7 @@ object SecondSession {
       .getOrCreate()
 
     // 读取原数据 下单用户
-    val peopleRDD = spark.sparkContext.textFile("C:\\Users\\hunter\\Desktop\\某电商用户画像系统建设项目实战\\first-session\\cookiesession")
+    val peopleRDD = spark.sparkContext.textFile("C:\\Users\\hunter\\Desktop\\first-session\\cookiesession")
       .map(_.split(","))       // RDD[Array[String]]
       .map( row => Row(row(0),row(1),row(2),row(3),row(4)))    // RDD[Row]
 
